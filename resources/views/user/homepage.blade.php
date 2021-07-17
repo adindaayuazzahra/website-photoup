@@ -92,20 +92,15 @@
   section.kegiatan {
       margin-top: 15rem;
   }
-  .card {
-    background-color: #F2BF3C;
-    height: 14rem;
-    border-radius: 10px; 
-  }
-  .card:hover{
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 1);
-  }
+  
   h5{
     background-color: #078080;
     border-radius: 20px;
     font-weight: 500;
   }
-
+  .gambar:hover{
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 1);
+  }
   @media (max-width: 991.98px) {
     .offcanvas-collapse {
       position: fixed;
@@ -157,8 +152,7 @@
      font-size: 13pt;
      text-align: center; 
     }
-
-    .card {
+    .gambar {
       margin-top: 1rem;
     }
 
@@ -201,11 +195,11 @@
 
 {{-- Profil --}}
 <section id="profil"></section>
-<section  class="profil" data-aos="fade-right">
+<section  class="profil" >
   <div  class="container" >
     <div class="row">
       <div class="col-md-12 d-flex justify-content-center">
-        <h1 class="judul ">Photography<br>Universitas Pancasila</h1>
+        <h1 class="judul" data-aos="fade-right" data-aos-anchor-placement="top">Photography<br>Universitas Pancasila</h1>
       </div>
     </div>
     
@@ -214,7 +208,7 @@
         <img  width="100%" height="100%" src="{{asset('assets/img/profil.png')}}"/>
       </div>
       <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
-        <p class="mt-5 mb-2">UKM PHOTO UP KMUP didirikan pada tanggal 22 April 1994 oleh mahasiswa/i Universitas Pancasila dibawah naungan Senat KMUP.</p>
+        <p class="mt-5 mb-2" data-aos="fade-left" data-aos-anchor-placement="bottom">UKM PHOTO UP KMUP didirikan pada tanggal 22 April 1994 oleh mahasiswa/i Universitas Pancasila dibawah naungan Senat KMUP.</p>
         <a href="" class="btn btn-lg  text-white">Selengkapnya</a>
       </div>
     </div>
@@ -224,16 +218,16 @@
 
 {{-- kkegiatn --}}
 <section class="kegiatan">
-  <div class="container"data-aos="fade-left">
+  <div class="container">
     <div class="row">
       <div class="col-md-12 d-flex justify-content-center">
-        <h1 class="judul">Kegiatan</h1>
+        <h1 class="judul" data-aos="fade-left" data-aos-anchor-placement="top">Kegiatan</h1>
       </div>
     </div>
     
     <div class="row gambar-content mb-5">
       <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
-        <p class="my-5">UKM PHOTO UP KMUP mengadakan segenap kegiatan yang berkaitan dengan fotografi dan berorganisasi.</p>
+        <p class="my-5" data-aos="fade-right" data-aos-anchor-placement="bottom">UKM PHOTO UP KMUP mengadakan segenap kegiatan yang berkaitan dengan fotografi dan berorganisasi.</p>
       </div>
       <div class="col-md-6 col-sm-12 d-flex justify-content-start align-items-start" >
         <img  width="100%" height="100%" src="{{asset('assets/img/kegiatan.png')}}"/>
@@ -241,33 +235,21 @@
     </div>
     
     <div class="row mb-5">
-      <div class="col-md-4"data-aos-anchor-placement="bottom" data-aos-delay="">
-        <a href="">
-          <div class="card">
-            <div class="card-body d-flex align-items-end">
-              <h5><span class="badge">Pendidikan  & Pelatihan</span></h5>
-            </div>
-          </div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <a class="gambar" href="">
+          <img width="100%" height="100%" src="{{asset('assets/img/diklat.png')}}" alt="">
         </a>
       </div>
 
-      <div class="col-md-4"data-aos-anchor-placement="bottom" data-aos-delay="">
-        <a href="">
-          <div class="card">
-            <div class="card-body d-flex align-items-end">
-              <h5><span class="badge">Pameran Foto</span></h5>
-            </div>
-          </div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <a class="gambar" href="">
+          <img  width="100%" height="100%" src="{{asset('assets/img/pameran.png')}}" alt="">
         </a>
       </div>
 
-      <div class="col-md-4"data-aos-anchor-placement="bottom" data-aos-delay="">
-        <a href="">
-          <div class="card">
-            <div class="card-body d-flex align-items-end">
-              <h5><span class="badge">Hunting Foto</span></h5>
-            </div>
-          </div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <a class="gambar" href="">
+          <img  width="100%" height="100%" src="{{asset('assets/img/hunting.png')}}" alt="">
         </a>
       </div>
     </div>

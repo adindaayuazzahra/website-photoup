@@ -33,7 +33,7 @@
         <div style="font-weight: 400;font-size: 13pt;" class="nav-masthead  navbar-collapse offcanvas-collapse justify-content-end" id="navbarsExampleDefault">
           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active home" href="#">Beranda</a>
+              <a class="nav-link active home" href="{{'/'}}">Beranda</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active profil" href="#">Profil</a>
@@ -77,7 +77,7 @@
     <script src="{{asset('assets/node_modules/aos/dist/aos.js')}}"></script>
     <script>
       AOS.init({
-      offset: 350,
+      offset: 400,
       duration: 1000,
       easing: 'ease',
     });
