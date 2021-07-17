@@ -37,11 +37,6 @@
     font-family: 'Quicksand';
     
   }
-  .jumbotron .display-4 span {
-    font-weight: 700;
-    text-align: center;
-  }
-
   /* Profil */
   .btn{
     background-color: #078080;
@@ -168,10 +163,10 @@
         </pattern>
         <image id="image0" width="945" height="944" xlink:href="{{asset('assets/img/logo.jpg')}}"/>
       </svg>
-      <h1 class="display-4 mt-1 mb-0">
-        <svg width="90" height="90" style="margin-left:-100px;">
+      <h1 class="display-1 mt-1 mb-0">
+        {{-- <svg width="90" height="90" style="margin-left:-100px;">
           <rect width="90" height="90" style="fill:#F2BF3C;" />
-        </svg>
+        </svg> --}}
         Selamat Datang di<br><span>UKM PHOTO UP KMUP</span>
       </h1><br>
       <p class="alamat">
@@ -241,24 +236,38 @@
               <div class="modal-body">
                 <div class="row">
                   <div class="col-md-11">
-                    <h5 class="judul">Pelatihan dan pendidikan</h5>
+                    <h5 class="judul">Pendidikan<br>dan Pelatihan</h5>
                   </div>
                   <div class="col-md-1 d-flex align-items-end">
                     {{-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> --}}
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-6">
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam, laudantium voluptates autem nisi dolore aliquid aliquam excepturi velit tempore ipsum ullam laborum facere asperiores, iste ex eius dolorem suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, obcaecati repudiandae? Eius vero debitis quia dolores. Labore impedit tenetur sequi sint dolores illum. Eligendi similique vel, laboriosam doloremque veniam quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perspiciatis delectus aliquid tempore ex ea soluta qui officiis, quaerat, sequi accusamus at aperiam rem sint repellat reiciendis. In, voluptas laborum!</p>
+                  <div class="col-md-5">
+                    <p class="text-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam, laudantium voluptates autem nisi dolore aliquid aliquam excepturi velit tempore ipsum ullam laborum facere asperiores, iste ex eius dolorem suscipit.</p>
                   </div>
-                  <div class="col-md-6">
-                    <img width="100%" height="100%" src="{{asset('assets/img/diklat.png')}}" alt="">
+                  <div class="col-md-7">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="{{asset('assets/img/diklat.png')}}" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{{asset('assets/img/pameran.png')}}" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{{asset('assets/img/hunting.png')}}" class="d-block w-100">
+                        </div>
+                      </div>
+                    </div>
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
 
       <div class="col-md-4 d-flex justify-content-center">
