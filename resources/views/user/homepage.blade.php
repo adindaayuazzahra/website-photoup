@@ -92,12 +92,6 @@
   section.kegiatan {
       margin-top: 15rem;
   }
-  
-  h5{
-    background-color: #078080;
-    border-radius: 20px;
-    font-weight: 500;
-  }
   .gambar:hover{
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 1);
   }
@@ -175,9 +169,9 @@
         <image id="image0" width="945" height="944" xlink:href="{{asset('assets/img/logo.jpg')}}"/>
       </svg>
       <h1 class="display-4 mt-1 mb-0">
-        {{-- <svg width="90" height="90" style="margin-left:-100px;">
+        <svg width="90" height="90" style="margin-left:-100px;">
           <rect width="90" height="90" style="fill:#F2BF3C;" />
-        </svg> --}}
+        </svg>
         Selamat Datang di<br><span>UKM PHOTO UP KMUP</span>
       </h1><br>
       <p class="alamat">
@@ -219,6 +213,7 @@
 {{-- kkegiatn --}}
 <section class="kegiatan">
   <div class="container">
+    
     <div class="row">
       <div class="col-md-12 d-flex justify-content-center">
         <h1 class="judul" data-aos="fade-left" data-aos-anchor-placement="top">Kegiatan</h1>
@@ -236,9 +231,34 @@
     
     <div class="row mb-5">
       <div class="col-md-4 d-flex justify-content-center">
-        <a class="gambar" href="">
+        <a class="gambar" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
           <img width="100%" height="100%" src="{{asset('assets/img/diklat.png')}}" alt="">
         </a>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content p-3">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-11">
+                    <h5 class="judul">Pelatihan dan pendidikan</h5>
+                  </div>
+                  <div class="col-md-1 d-flex align-items-end">
+                    {{-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> --}}
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam, laudantium voluptates autem nisi dolore aliquid aliquam excepturi velit tempore ipsum ullam laborum facere asperiores, iste ex eius dolorem suscipit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, obcaecati repudiandae? Eius vero debitis quia dolores. Labore impedit tenetur sequi sint dolores illum. Eligendi similique vel, laboriosam doloremque veniam quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perspiciatis delectus aliquid tempore ex ea soluta qui officiis, quaerat, sequi accusamus at aperiam rem sint repellat reiciendis. In, voluptas laborum!</p>
+                  </div>
+                  <div class="col-md-6">
+                    <img width="100%" height="100%" src="{{asset('assets/img/diklat.png')}}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="col-md-4 d-flex justify-content-center">
@@ -253,6 +273,7 @@
         </a>
       </div>
     </div>
+
   </div>
 </section>
 @endsection
