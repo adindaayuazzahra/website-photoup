@@ -200,7 +200,7 @@
 </div>
 
 {{-- Profil --}}
-<section id="profil">
+<section id="profil"></section>
 <section  class="profil" data-aos="fade-right">
   <div  class="container" >
     <div class="row">
@@ -220,7 +220,6 @@
     </div>
 
   </div>
-</section>
 </section>
 
 {{-- kkegiatn --}}
