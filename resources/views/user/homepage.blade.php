@@ -90,6 +90,75 @@
   .gambar:hover{
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 1);
   }
+
+  /* portofolio */
+  section.portofolio {
+      margin-top: 9rem;
+  }
+  .portofolio img {
+    position: relative;
+    z-index: 1;
+  }
+  .portofolio .judul {
+    font-family: 'Roboto Slab'; 
+    font-weight:800;
+    font-size:50px; 
+    z-index:2;
+    margin-left: -4rem;
+    margin-top: 1.4rem;
+  }
+  .portofolio .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  }
+
+  .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+  .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+      }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+  .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+      }
+  }
+
+  /* lightbox */
+  .portofolio .lightbox img {
+      width: 100%;
+      transition: 0.2s ease-in-out;
+      box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+  }
+
+  .portofolio .lightbox img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  }
+
   @media (max-width: 991.98px) {
     .offcanvas-collapse {
       position: fixed;
@@ -114,9 +183,6 @@
     }
   }
   @media  (max-width: 700px){
-    .jumbotron {
-      height: 600px;
-    }
     .jumbotron .alamat {
       font-size: 9pt;
     }
@@ -137,6 +203,9 @@
       font-size: 30px;
       text-align: center;
     }
+    .portofolio .judul{
+      font-size: 35px;
+    }
     .profil p, .kegiatan p, .profil a {
      font-size: 13pt;
      text-align: center; 
@@ -144,8 +213,19 @@
     .gambar {
       margin-top: 1rem;
     }
-
   }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .kegiatan .judul, .profil .judul{
+      font-size: 25px;
+    }
+    .profil p, .kegiatan p, .profil a {
+     font-size: 12pt;
+    }
+    .profil .gambar-content, .kegiatan .gambar-content{
+    margin-top: -6rem;
+    }
+  }
+
 </style>
 @endsection
 
@@ -224,13 +304,16 @@
       </div>
     </div>
     
+    {{-- kartuu kegiatan --}}
     <div class="row mb-5">
+
+      {{-- diklat --}}
       <div class="col-md-4 d-flex justify-content-center">
-        <a class="gambar" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <a class="gambar" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#diklat">
           <img width="100%" height="100%" src="{{asset('assets/img/diklat.png')}}" alt="">
         </a>
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="diklat" tabindex="-1" aria-labelledby="diklatLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content p-3">
               <div class="modal-body">
@@ -238,13 +321,10 @@
                   <div class="col-md-11">
                     <h5 class="judul">Pendidikan<br>dan Pelatihan</h5>
                   </div>
-                  <div class="col-md-1 d-flex align-items-end">
-                    {{-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> --}}
-                  </div>
                 </div>
                 <div class="row">
                   <div class="col-md-5">
-                    <p class="text-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam, laudantium voluptates autem nisi dolore aliquid aliquam excepturi velit tempore ipsum ullam laborum facere asperiores, iste ex eius dolorem suscipit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam, laudantium voluptates autem nisi dolore aliquid aliquam excepturi velit tempore ipsum ullam laborum facere asperiores, iste ex eius dolorem suscipit.</p>
                   </div>
                   <div class="col-md-7">
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -270,19 +350,149 @@
 
       </div>
 
+      {{-- Pameran foto --}}
       <div class="col-md-4 d-flex justify-content-center">
-        <a class="gambar" href="">
-          <img  width="100%" height="100%" src="{{asset('assets/img/pameran.png')}}" alt="">
+        <a class="gambar" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pameran">
+          <img width="100%" height="100%" src="{{asset('assets/img/pameran.png')}}" alt="">
         </a>
+        <!-- Modal -->
+        <div class="modal fade" id="pameran" tabindex="-1" aria-labelledby="pameranLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content p-3">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-11">
+                    <h5 class="judul">Pameran<br>Fotografi</h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam, laudantium voluptates autem nisi dolore aliquid aliquam excepturi velit tempore ipsum ullam laborum facere asperiores, iste ex eius dolorem suscipit. pameran  fotografi</p>
+                  </div>
+                  <div class="col-md-7">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="{{asset('assets/img/diklat.png')}}" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{{asset('assets/img/pameran.png')}}" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{{asset('assets/img/hunting.png')}}" class="d-block w-100">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
+      {{-- Hunting Foto --}}
       <div class="col-md-4 d-flex justify-content-center">
-        <a class="gambar" href="">
-          <img  width="100%" height="100%" src="{{asset('assets/img/hunting.png')}}" alt="">
+        <a class="gambar" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hunting">
+          <img width="100%" height="100%" src="{{asset('assets/img/hunting.png')}}" alt="">
+        </a>
+        <!-- Modal -->
+        <div class="modal fade" id="hunting" tabindex="-1" aria-labelledby="huntingLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content p-3">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-11">
+                    <h5 class="judul">Hunting<br>Foto</h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam, laudantium voluptates autem nisi dolore aliquid aliquam excepturi velit tempore ipsum ullam laborum facere asperiores, iste ex eius dolorem suscipit. hunting foto</p>
+                  </div>
+                  <div class="col-md-7">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="{{asset('assets/img/diklat.png')}}" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{{asset('assets/img/pameran.png')}}" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{{asset('assets/img/hunting.png')}}" class="d-block w-100">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    
+  </div>
+</section>
+
+<section class="portofolio gallery">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 d-flex align-items-start">
+        <img src="{{asset('assets/img/Rectangle porto.png')}}" alt="">
+        <h1 class="judul">Portofolio</h1>
+      </div>
+      
+      {{-- Kolom 1 --}}
+      <div class="col-md-3 column">
+        <a class="lightbox" href="assets/img/1.jpeg">
+          <img src="{{asset('assets/img/1.jpeg')}}" style="width:100%">
+        </a>
+        <a class="lightbox" href="assets/img/7.jpeg">
+          <img src="{{asset('assets/img/7.jpeg')}}" style="width:100%">
+        </a>
+      </div>
+      
+      {{-- Kolom 2 --}}
+      <div class="col-md-3 column ">
+        <a class="lightbox" href="assets/img/4.jpeg">
+          <img src="{{asset('assets/img/4.jpeg')}}" style="width:100%">
+        </a>
+        <a class="lightbox" href="assets/img/6.jpg">
+          <img src="{{asset('assets/img/6.jpg')}}" style="width:100%">
+        </a>
+        <a class="lightbox" href="assets/img/2.jpeg">
+          <img src="{{asset('assets/img/2.jpeg')}}" style="width:100%">
+        </a>
+      </div>  
+      
+      {{-- Kolom 3 --}}
+      <div class="col-md-3 column ">
+        <a class="lightbox" href="assets/img/8.jpg">
+          <img src="{{asset('assets/img/8.jpg')}}" style="width:100%">
+        </a>
+        <a class="lightbox" href="assets/img/9.jpeg">
+          <img src="{{asset('assets/img/9.jpeg')}}" style="width:100%">
         </a>
       </div>
     </div>
-
+      
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-12 d-flex justify-content-center">
+        <a href="" class="btn btn-lg text-white">Klik Untuk Lihat Porotfolio yang Lainnya</a>
+      </div>
+    </div>
   </div>
 </section>
+<br>
+<br>
+<br>
+
 @endsection

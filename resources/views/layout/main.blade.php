@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" type="image/png" sizes="96x96" href="{{asset('assets/img/logo.jpg')}}">
     <link rel="stylesheet" href="{{asset('assets/node_modules/aos/dist/aos.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/css/baguetteBox.min.css')}}">
 
     {{-- font --}}
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
@@ -39,21 +40,36 @@
               <a class="nav-link active profil" href="#">Profil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active blog" href="#">Portofolio</a>
+              <a class="nav-link active porto" href="{{'/portofolio'}}">Portofolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active artikel" href="#">Artikel</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active event" href="#">Acara</a>
+              <a class="nav-link active event" href="{{'/acara'}}">Acara</a>
             </li>
           </ul>
         </div>
       </div>
     </nav> 
-  
+
     @yield('content')
 
+    <footer class="text-center text-lg-start p-1 mt-5"style="background-color : #f8f5f2;">
+      <section class="content-footer">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row">
+            <div class="col-md-5 col-sm-12 col-lg-4 col-xl-3 mx-auto mb-4" style="font-family:'Roboto';">
+              <p class="text-uppercase fw-bold mb-2" style="font-weight:400; font-size:20pt;">UKM PHOTOUP KMPU</p>
+              <p style="font-weight:200;">Gedung Pusat Kegiatan Mahasiswa, Universitas Pancasila. Jl.Srengseng Sawah, Jagakarsa Jakarta Selatan 12640</p>
+            </div>
+            <div class="col-md-5 col-sm-12 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            </div>
+          </div>
+        </div>
+      </section>
+      <p class="text-center">© 2021 Copyright: PHOTOUP</p> 
+    </footer>  
     <!-- Optional JavaScript; choose one of the two! -->
     <script>
       (function () {
@@ -77,12 +93,15 @@
     <script src="{{asset('assets/node_modules/aos/dist/aos.js')}}"></script>
     <script>
       AOS.init({
-      offset: 400,
+      offset: 120,
       duration: 1000,
       easing: 'ease',
     });
     </script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+      baguetteBox.run('.gallery');
+    </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
