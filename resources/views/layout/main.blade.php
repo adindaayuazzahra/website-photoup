@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="{{asset('assets/img/logo.jpg')}}">
     <link rel="stylesheet" href="{{asset('assets/node_modules/aos/dist/aos.css')}}"/>
     <link rel="stylesheet" href="{{asset('assets/css/baguetteBox.min.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     {{-- font --}}
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
@@ -63,12 +64,19 @@
               <p class="text-uppercase fw-bold mb-2" style="font-weight:400; font-size:20pt;">UKM PHOTOUP KMPU</p>
               <p style="font-weight:200;">Gedung Pusat Kegiatan Mahasiswa, Universitas Pancasila. Jl.Srengseng Sawah, Jagakarsa Jakarta Selatan 12640</p>
             </div>
-            <div class="col-md-5 col-sm-12 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <div class="col-md-5 col-sm-12 col-lg-3 col-xl-3 mx-auto d-md-flex justify-content-end align-content-center align-items-center mb-md-0 mb-4">
+              <a href="" style="margin-right:1rem;" ><i class="fab fa-youtube"style="font-size: 50px; color:black;"></i></a>
+              <a href="https://www.instagram.com/photoup94/" target="_blank"><i class="fab fa-instagram"style="font-size: 50px; color:black;"></i></a>
+              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-center">© 2021 Copyright: PHOTOUP</p>
             </div>
           </div>
         </div>
       </section>
-      <p class="text-center">© 2021 Copyright: PHOTOUP</p> 
     </footer>  
     <!-- Optional JavaScript; choose one of the two! -->
     <script>
@@ -93,7 +101,7 @@
     <script src="{{asset('assets/node_modules/aos/dist/aos.js')}}"></script>
     <script>
       AOS.init({
-      offset: 120,
+      offset: 0,
       duration: 1000,
       easing: 'ease',
     });

@@ -486,7 +486,7 @@
     </div>
     <div class="row mt-5">
       <div class="col-md-12 d-flex justify-content-center">
-        <a href="" class="btn btn-lg text-white">Klik Untuk Lihat Porotfolio yang Lainnya</a>
+        <a href="{{'/portofolio'}}" class="btn btn-lg text-white">Klik Untuk Lihat Portofolio yang Lainnya</a>
       </div>
     </div>
   </div>
