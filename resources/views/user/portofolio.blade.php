@@ -2,17 +2,6 @@
 @section('title','PHOTO UP | PORTOFOLIO')
 @section('css')
 <style>
-  .btn.mulai{
-    background-color: #078080;
-    width: 120px;
-    border-radius: 20px;
-    font-weight: 700;
-    margin-top: 20px;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 1);
-  }
-  .btn.mulai:hover {
-    box-shadow: 0 1.5rem 2rem 0 rgba(0, 0, 0, 8.5);
-  }
   .nav-masthead .nav-link {
     padding: .25rem 0;
     font-weight: 700;
@@ -116,6 +105,13 @@
       transform: translateX(-100%);
     }
   }
+  @media (max-width: 700px) {
+    .portofolio .judul {
+      font-family: 'Roboto Slab'; 
+      font-weight:800;
+      font-size:40px; 
+    }
+  }
 </style>
 @endsection
 @section('content')
@@ -123,7 +119,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 d-flex align-items-start justify-content-center">
-        <h1 class="judul">Portofolio</h1>
+        <h1 class="judul">Portofolio.</h1>
       </div>
     </div>
     
