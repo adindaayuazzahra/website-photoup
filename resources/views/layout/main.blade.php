@@ -42,7 +42,7 @@
               <a class="nav-link active porto" href="{{'/portofolio'}}">Portofolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active artikel" href="#">Artikel</a>
+              <a class="nav-link active artikel" href="{{'/artikel'}}">Artikel</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active acara" href="{{'/acara'}}">Acara</a>
@@ -58,14 +58,13 @@
       <section class="content-footer">
         <div class="container text-center text-md-start mt-5">
           <div class="row">
-            <div class="col-md-5 col-sm-12 col-lg-4 col-xl-3 mx-auto mb-4" style="font-family:'Roboto';">
-              <p class="text-uppercase fw-bold mb-2" style="font-weight:400; font-size:20pt;">UKM PHOTOUP KMPU</p>
-              <p style="font-weight:200;">Gedung Pusat Kegiatan Mahasiswa, Universitas Pancasila. Jl.Srengseng Sawah, Jagakarsa Jakarta Selatan 12640</p>
+            <div class="col-md-6 col-sm-12 mx-auto mb-4" style="font-family:'Roboto';">
+              <p class="text-uppercase fw-bold mb-2" style="font-weight:400; font-size:20pt;">UKM PHOTOUP KMUP</p>
+              <p style="font-weight:300;">Gedung Pusat Kegiatan Mahasiswa, Universitas Pancasila.<br>Jl.Srengseng Sawah, Jagakarsa Jakarta Selatan 12640</p>
             </div>
-            <div class="col-md-5 col-sm-12 col-lg-3 col-xl-3 mx-auto d-md-flex justify-content-end align-content-center align-items-center mb-md-0 mb-4">
-              <a href="" style="margin-right:1rem;" ><i class="fab fa-youtube"style="font-size: 50px; color:black;"></i></a>
+            <div class="col-md-5 col-sm-12 mx-auto d-md-flex justify-content-end align-content-center align-items-center mb-md-0 mb-4">
+              <a href="https://www.youtube.com/channel/UCiOalYiee_t57inMNtgSVtA" target="_blank" style="margin-right:1rem;" ><i class="fab fa-youtube"style="font-size: 50px; color:black;"></i></a>
               <a href="https://www.instagram.com/photoup94/" target="_blank"><i class="fab fa-instagram"style="font-size: 50px; color:black;"></i></a>
-              
             </div>
           </div>
           <div class="row">
@@ -102,6 +101,7 @@
       offset: 0,
       duration: 1000,
       easing: 'ease',
+      disable: window.innerWidth < 1024,
     });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>

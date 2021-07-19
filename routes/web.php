@@ -24,3 +24,7 @@ Route::get('/portofolio', function () {
 Route::get('/acara', function () {
     return view('user/acara');
 });
+
+Route::get('/artikel', function () {
+    return view('user/artikel');
+});

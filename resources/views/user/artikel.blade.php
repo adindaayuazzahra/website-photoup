@@ -1,5 +1,5 @@
 @extends('layout/main')
-@section('title','PHOTO UP | ACARA')
+@section('title','PHOTO UP | ARTIKEL')
 @section('css')
 <style>
   .nav-masthead .nav-link {
@@ -15,14 +15,14 @@
   .nav-masthead .nav-link {
     margin-left: 0.5rem;
   }
-  .nav-masthead .acara {
+  .nav-masthead .artikel {
     color: rgb(255, 255, 255);
     border-bottom-color: #F2BF3C;
   }
-  section.acara {
+  section.artikel {
       margin-top: 9rem;
   }
-  .acara .judul {
+  .artikel .judul {
     font-family: 'Roboto Slab'; 
     font-weight:800;
     font-size:50px; 
@@ -51,7 +51,7 @@
     }
   }
   @media (max-width: 700px) {
-    .acara .judul {
+    .artikel .judul {
       font-family: 'Roboto Slab'; 
       font-weight:800;
       font-size:40px; 
@@ -60,17 +60,5 @@
 </style>
 @endsection
 @section('content')
-<section class="acara">
-  <div class="row">
-    <div class="col d-flex align-items-start justify-content-center">
-      <h1 class="judul">Acara.</h1>
-    </div>
-  </div>
-
-  <div class="row mt-5">
-    <div class="col d-flex align-items-start justify-content-center">
-      <img width="100%" height="100%" src="{{asset('assets/img/coming soon.png')}}">
-    </div>
-  </div>
-</section>
+    
 @endsection
