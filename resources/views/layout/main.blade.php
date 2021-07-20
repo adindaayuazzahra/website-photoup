@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="{{asset('assets/img/logo.jpg')}}">
     <link rel="stylesheet" href="{{asset('assets/node_modules/aos/dist/aos.css')}}"/>
     <link rel="stylesheet" href="{{asset('assets/css/baguetteBox.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     {{-- font --}}
@@ -22,15 +23,15 @@
 
     <title>@yield('title')</title>
   </head>
-  <body>
+  <body style="overflow-x:hidden;" class="w-100">
     {{-- Navbar --}}
-    <nav style="font-family: 'Roboto', sans-serif;" class="navbar fixed-top navbar-expand-lg navbar-light" aria-label="Main navigation">
+    <nav style="font-family: 'Roboto', sans-serif;" class="navbar fixed-top navbar-expand-lg navbar-light"  aria-label="Main navigation">
       <div class="container">
         <a class="navbar-brand" style="font-weight: 900; font-size: 20pt;" href="#">PHOTO UP</a>
-        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+        <button class="navbar-toggler border-0" type="button" aria-expanded="false" id="navbarSideCollapse" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div style="font-weight: 400;font-size: 13pt;" class="nav-masthead  navbar-collapse offcanvas-collapse justify-content-end" id="navbarsExampleDefault">
+        <div style="font-weight: 400;font-size: 13pt;" class="nav-masthead  navbar-collapse  offcanvas-collapse  justify-content-end" id="navbars">
           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active home" href="{{'/'}}">Beranda</a>
@@ -50,7 +51,7 @@
           </ul>
         </div>
       </div>
-    </nav> 
+    </nav>  
 
     @yield('content')
 
