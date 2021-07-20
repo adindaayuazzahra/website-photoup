@@ -35,7 +35,7 @@
         </svg> --}}
       </p>
       
-      <a href="#profil" class="btn btn-lg text-white mulai p-1">MULAI</a>
+      <a href="#profil" class="btn btn-custom btn-lg text-white mulai p-1">MULAI</a>
     </section>
   </div>
 </div>
@@ -87,7 +87,7 @@
 
       {{-- diklat --}}
       <div class="col-md-4 d-flex justify-content-center">
-        <a class="gambar" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#diklat">
+        <a class="gambar" data-bs-toggle="modal" data-bs-target="#diklat">
           <img width="100%" height="100%" src="{{asset('assets/img/diklat.png')}}" alt="">
         </a>
         <!-- Modal -->
@@ -130,7 +130,7 @@
 
       {{-- Pameran foto --}}
       <div class="col-md-4 d-flex justify-content-center">
-        <a class="gambar" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pameran">
+        <a class="gambar" data-bs-toggle="modal" data-bs-target="#pameran">
           <img width="100%" height="100%" src="{{asset('assets/img/pameran.png')}}" alt="">
         </a>
         <!-- Modal -->
@@ -173,7 +173,7 @@
 
       {{-- Hunting Foto --}}
       <div class="col-md-4 d-flex justify-content-center">
-        <a class="gambar" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hunting">
+        <a class="gambar" data-bs-toggle="modal" data-bs-target="#hunting">
           <img width="100%" height="100%" src="{{asset('assets/img/hunting.png')}}" alt="">
         </a>
         <!-- Modal -->
@@ -264,7 +264,7 @@
     </div>
     <div class="row mt-5">
       <div class="col-md-12 d-flex justify-content-center">
-        <a href="{{'/portofolio'}}" class="btn btn-lg text-white">Klik Untuk Lihat Portofolio yang Lainnya</a>
+        <a href="{{'/portofolio'}}" class="btn btn-custom btn-lg text-white">Klik Untuk Lihat Portofolio yang Lainnya</a>
       </div>
     </div>
   </div>

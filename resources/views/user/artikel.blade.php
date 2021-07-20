@@ -2,53 +2,9 @@
 @section('title','PHOTO UP | ARTIKEL')
 @section('css')
 <style>
-  .nav-masthead .nav-link {
-    padding: .25rem 0;
-    font-weight: 700;
-    color: rgba(255, 255, 255, .5);
-    border-bottom: .25rem solid transparent;
-  }
-  .nav-masthead .nav-link:hover,
-  .nav-masthead .nav-link:focus {
-    border-bottom-color: rgba(61, 61, 61, 0.25);
-  }
-  .nav-masthead .nav-link {
-    margin-left: 0.5rem;
-  }
   .nav-masthead .artikel {
     color: rgb(255, 255, 255);
     border-bottom-color: #F2BF3C;
-  }
-  section.artikel {
-      margin-top: 9rem;
-  }
-  .artikel .judul {
-    font-family: 'Roboto Slab'; 
-    font-weight:800;
-    font-size:50px; 
-  }
-  @media (max-width: 991.98px) {
-    .offcanvas-collapse {
-      position: fixed;
-      top: 60px; /* Height of navbar */
-      bottom: 0;
-      left: 100%;
-      width: 100%;
-      padding-right: 1rem;
-      padding-left: 1rem;
-      padding-top: 1rem;
-      overflow-y: auto;
-      visibility: hidden;
-      background-color: #ffffff;
-      transition: transform .3s ease-in-out, visibility .3s ease-in-out;
-    }
-    .offcanvas-collapse.open {
-      background-color: #ffffff;
-      visibility: visible;
-      padding-left: 1rem;
-      padding-right: 5rem;
-      transform: translateX(-100%);
-    }
   }
   @media (max-width: 700px) {
     .artikel .judul {
@@ -60,5 +16,91 @@
 </style>
 @endsection
 @section('content')
+<section class="artikel">
+    <div class="row p-5" style="background-color: #dedede">
+      <div class="col-md-12 text-center">
+        <h1 class="judul">Artikel.</h1>
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <form>
+              <div class="input-group my-2 p-1">
+                <input type="text" class="form-control" placeholder="Pencarian" aria-label="Pencarian" aria-describedby="button-addon2">
+                <button id="button-addon2" type="button" class="btn btn-link text-success"><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     
+    <div class="container"style="font-family:'Roboto Slab'">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card border-0">
+            <img src="{{asset('assets/img/k1_3.JPG')}}" class="card-img-top">
+            <div class="card-body px-0 flex-column">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="d-flex flex-row-reverse bd-highlight">
+                <a href="#" style="text-decoration: none; color: black;">Baca Selengkapnya <i class="fas fa-long-arrow-alt-right"></i></a> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0">
+            <img src="{{asset('assets/img/k1_1.JPG')}}" class="card-img-top">
+            <div class="card-body px-0 flex-column">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="d-flex flex-row-reverse bd-highlight">
+                <a href="#" style="text-decoration: none; color: black;">Baca Selengkapnya <i class="fas fa-long-arrow-alt-right"></i></a> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0">
+            <img src="{{asset('assets/img/k1_2.JPG')}}" class="card-img-top">
+            <div class="card-body px-0 flex-column">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="d-flex flex-row-reverse bd-highlight">
+                <a href="#" style="text-decoration: none; color: black;">Baca Selengkapnya <i class="fas fa-long-arrow-alt-right"></i></a> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0">
+            <img src="{{asset('assets/img/k1_1.JPG')}}" class="card-img-top">
+            <div class="card-body px-0 flex-column">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="d-flex flex-row-reverse bd-highlight">
+                <a href="#" style="text-decoration: none; color: black;">Baca Selengkapnya <i class="fas fa-long-arrow-alt-right"></i></a> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0">
+            <img src="{{asset('assets/img/k1_3.JPG')}}" class="card-img-top">
+            <div class="card-body px-0 flex-column">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="d-flex flex-row-reverse bd-highlight">
+                <a href="#" style="text-decoration: none; color: black;">Baca Selengkapnya <i class="fas fa-long-arrow-alt-right"></i></a> 
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+</section>
 @endsection

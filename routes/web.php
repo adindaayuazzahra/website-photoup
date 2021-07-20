@@ -28,3 +28,7 @@ Route::get('/acara', function () {
 Route::get('/artikel', function () {
     return view('user/artikel');
 });
+
+Route::get('/profil', function () {
+    return view('user/profil');
+});

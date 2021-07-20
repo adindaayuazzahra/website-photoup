@@ -29,13 +29,13 @@
 }
 
 /* Profil */
-.btn{
+.btn-custom{
   background-color: #078080;
   border-radius: 20px;
   text-align: center;
   font-weight: 500;
 }
-.btn:hover {
+.btn-custom:hover {
   box-shadow: 0 1.5rem 2rem 0 rgba(0, 0, 0, 8.5);
 }
 .profil .judul {
@@ -159,6 +159,39 @@ section.acara {
   font-weight:800;
   font-size:50px; 
 }
+
+/* artikel */
+section.artikel {
+  margin-top: 7rem;
+}
+.artikel .judul {
+  font-family: 'Roboto Slab'; 
+  font-weight:800;
+  font-size:50px; 
+}
+.artikel .form-control:focus {
+  box-shadow: none;
+}
+
+.artikel .form-control-underlined {
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-radius: 0;
+  padding-left: 0;
+}
+.artikel .form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+.artikel form {
+  width: 30rem;
+}
+.card {
+  margin-top: 4rem;
+  margin-right: 0.5rem;
+}
+
 
 
 @media (max-width: 991.98px) {
