@@ -37,7 +37,7 @@
               <a class="nav-link active home" href="{{'/'}}">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active profil" href="#">Profil</a>
+              <a class="nav-link active profil" href="{{'/profil'}}">Profil</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active porto" href="{{'/portofolio'}}">Portofolio</a>

@@ -1,5 +1,5 @@
 @extends('layout/main')
-@section('title','PHOTO UP | HOMEPAGE')
+@section('title','PHOTO UP | BERANDA')
 @section('css')
 <style>
   .nav-masthead .home {
@@ -105,7 +105,7 @@
                     <p>Memperkenalkan dasar-dasar fotografi dan untuk mengembangkan kreativitas bagi calon anggota dan anggota pada khususnya dan mahasiswa/i Universitas Pancasila.</p>
                   </div>
                   <div class="col-md-7">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
                           <img src="{{asset('assets/img/k1_1.JPG')}}" class="d-block w-100">
@@ -148,7 +148,7 @@
                     <p>Sebuah acara yang memperkenalkan atau memajang hasil karya foto yang mempunyai makna untuk dinikmati serta berbagi pengalaman kepada pengunjung.</p>
                   </div>
                   <div class="col-md-7">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
                           <img src="{{asset('assets/img/k2_1.JPG')}}" class="d-block w-100">
@@ -191,7 +191,7 @@
                     <p>Kegiatan jalan-jalan atau liburan ke suatu tempat untuk memotret berbagai objek.</p>
                   </div>
                   <div class="col-md-7">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
                           <img src="{{asset('assets/img/k3_1.JPG')}}" class="d-block w-100">
