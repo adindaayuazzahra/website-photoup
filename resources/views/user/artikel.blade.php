@@ -42,7 +42,7 @@
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <div class="d-flex flex-row-reverse bd-highlight">
-                <a href="#" style="text-decoration: none; color: black;">Baca Selengkapnya <i class="fas fa-long-arrow-alt-right"></i></a> 
+                <a href="{{('/artikel/viewartikel')}}" style="text-decoration: none; color: black;">Baca Selengkapnya <i class="fas fa-long-arrow-alt-right"></i></a> 
               </div>
             </div>
           </div>

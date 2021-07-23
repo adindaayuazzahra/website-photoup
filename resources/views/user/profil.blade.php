@@ -14,8 +14,37 @@
   .profil .bagian {
     margin-top: 6rem;
   }
-  .carousel-inner{
-   
+  body{
+   background-color: #f8f5f2
+  }
+  .kontak-sekre {
+    margin-top: 10rem;
+  }
+  .kontak-sekre .judul-home{
+    font-family: 'Roboto Slab'; 
+    font-weight:800;
+    font-size:50px; 
+    z-index:2;
+    margin-left:2rem;
+    margin-top: -5rem;
+  }
+  .kontak-sekre form {
+    margin-top: 2rem;
+    font-family: 'Quicksand'
+  }
+  .kontak-sekre p {
+    font-family: 'Quicksand';
+    font-size: 12pt;
+  }
+  @media  (max-width: 800px){
+    .kontak-sekre .judul-home{
+      font-family: 'Roboto Slab'; 
+      font-weight:800;
+      font-size:40px; 
+      z-index:2;
+      margin-left:2rem;
+      margin-top: -5rem;
+    }
   }
 </style>
 @endsection
@@ -224,28 +253,28 @@
     
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="{{asset('assets/img/f1.jpg')}}" class="d-block w-100 h-100" alt="...">
+        <img src="{{asset('assets/img/f1.jpg')}}" class="d-block w-100 h-100">
       </div>
       <div class="carousel-item">
-        <img src="{{asset('assets/img/f2.jpg')}}" class="d-block w-100 h-100" alt="...">
+        <img src="{{asset('assets/img/f2.jpg')}}" class="d-block w-100 h-100">
       </div>
       <div class="carousel-item">
-        <img src="{{asset('assets/img/f3.jpg')}}" class="d-block w-100 h-100" alt="...">
+        <img src="{{asset('assets/img/f3.jpg')}}" class="d-block w-100 h-100">
       </div>
       <div class="carousel-item">
-        <img src="{{asset('assets/img/f4.jpg')}}" class="d-block w-100 h-100" alt="...">
+        <img src="{{asset('assets/img/f4.jpg')}}" class="d-block w-100 h-100">
       </div>
       <div class="carousel-item">
-        <img src="{{asset('assets/img/f5.jpg')}}" class="d-block w-100 h-100" alt="...">
+        <img src="{{asset('assets/img/f5.jpg')}}" class="d-block w-100 h-100">
       </div>
       <div class="carousel-item">
-        <img src="{{asset('assets/img/f6.jpg')}}" class="d-block w-100 h-100" alt="...">
+        <img src="{{asset('assets/img/f6.jpg')}}" class="d-block w-100 h-100">
       </div>
       <div class="carousel-item">
-        <img src="{{asset('assets/img/f7.jpg')}}" class="d-block w-100 h-100" alt="...">
+        <img src="{{asset('assets/img/f7.jpg')}}" class="d-block w-100 h-100">
       </div>
       <div class="carousel-item">
-        <img src="{{asset('assets/img/f8.jpg')}}" class="d-block w-100 h-100" alt="...">
+        <img src="{{asset('assets/img/f8.jpg')}}" class="d-block w-100 h-100">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#mycarousel" data-bs-slide="prev">
@@ -257,5 +286,59 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+
+  {{-- kontak kami & sekretariat --}}
+  <div class="row kontak-sekre">
+    <div class="col-md-6 d-flex flex-column align-items-start mt-5">
+      <img src="{{asset('assets/img/Rectangle porto.png')}}" alt="">
+      <h1 class="judul-home">Kontak Kami</h1>
+      <div class="container">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
+              <label for="floatingInputGrid">Email</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="inputnama" placeholder="Nama">
+              <label for="floatingInputGrid">Nama</label>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="inputsubjek" placeholder="Subjek">
+              <label for="floatingInputGrid">Subjek</label>
+            </div>
+          </div>
+          <div class="col-md-12 mb-3">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
+              <label for="floatingInputGrid">Pesan</label>
+            </div>
+          </div>
+          <div class="col-md-12  d-flex justify-content-center">
+            <button type="submit" class="btn btn-lg btn-custom text-white" style="width:8rem;">Kirim </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    
+    
+    <div class="col-md-6 d-flex flex-column align-items-start mt-5">
+      <img src="{{asset('assets/img/Rectangle porto.png')}}" alt="">
+      <h1 class="judul-home">Sekretariat</h1>
+      <div class="container mt-5">
+        <p>Sekretariat UKM PHOTO UP KMUP di Gedung Pusat Kegiatan Mahasiswa, Universitas Pancasila.<br>Jl.Srengseng Sawah, Jagakarsa Jakarta Selatan 12640</p>
+        <p><i class="fab fa-whatsapp"></i> Humas - 08123012412<br><i class="fas fa-envelope"></i> photoup1994@gmail.com</p>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d454.53937820491495!2d106.83222367399291!3d-6.3383978129032865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69edc81e2878c1%3A0x273da725ef199289!2sUKM%20PHOTO%20UP%20KMUP!5e0!3m2!1sen!2sid!4v1627016567407!5m2!1sen!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+      </div>
+    </div>
+  </div>
 </div>
+
+
 @endsection

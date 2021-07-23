@@ -29,6 +29,10 @@ Route::get('/artikel', function () {
     return view('user/artikel');
 });
 
+Route::get('/artikel/viewartikel', function () {
+    return view('user/viewartikel');
+});
+
 Route::get('/profil', function () {
     return view('user/profil');
 });

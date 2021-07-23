@@ -9,8 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" type="image/png" sizes="96x96" href="{{asset('assets/img/logo.jpg')}}">
     <link rel="stylesheet" href="{{asset('assets/node_modules/aos/dist/aos.css')}}"/>
-    <link rel="stylesheet" href="{{asset('assets/css/baguetteBox.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/baguetteBox.min.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     {{-- font --}}
@@ -55,7 +55,7 @@
 
     @yield('content')
 
-    <footer class="text-center text-lg-start p-1 mt-5"style="background-color : #f8f5f2;">
+    <footer class="text-center text-lg-start p-1 mt-5 foooter"style="background-color : #f8f5f2;">
       <section class="content-footer">
         <div class="container text-center text-md-start mt-5">
           <div class="row">
