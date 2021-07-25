@@ -7,11 +7,16 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{asset('assets/img/logo.jpg')}}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{asset('assets/img/logo1.png')}}">
     <link rel="stylesheet" href="{{asset('assets/node_modules/aos/dist/aos.css')}}"/>
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/baguetteBox.min.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- owl corousel-->
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.css') }}">
 
     {{-- font --}}
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
@@ -27,11 +32,11 @@
     {{-- Navbar --}}
     <nav style="font-family: 'Roboto', sans-serif;" class="navbar fixed-top navbar-expand-lg navbar-light"  aria-label="Main navigation">
       <div class="container">
-        <a class="navbar-brand" style="font-weight: 900; font-size: 20pt;" href="#">PHOTO UP</a>
+        <a class="navbar-brand" href="{{'/'}}">PHOTO UP</a>
         <button class="navbar-toggler border-0" type="button" aria-expanded="false" id="navbarSideCollapse" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div style="font-weight: 400;font-size: 13pt;" class="nav-masthead  navbar-collapse  offcanvas-collapse  justify-content-end" id="navbars">
+        <div style="font-style: normal; font-size: 18px;" class="nav-masthead  navbar-collapse  offcanvas-collapse  justify-content-end" id="navbars">
           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active home" href="{{'/'}}">Beranda</a>
@@ -51,7 +56,7 @@
           </ul>
         </div>
       </div>
-    </nav>  
+    </nav>
 
     @yield('content')
 
@@ -64,8 +69,8 @@
               <p style="font-weight:300;">Gedung Pusat Kegiatan Mahasiswa, Universitas Pancasila.<br>Jl.Srengseng Sawah, Jagakarsa Jakarta Selatan 12640</p>
             </div>
             <div class="col-md-5 col-sm-12 mx-auto d-md-flex justify-content-end align-content-center align-items-center mb-md-0 mb-4">
-              <a href="https://www.youtube.com/channel/UCiOalYiee_t57inMNtgSVtA" target="_blank" style="margin-right:1rem;" ><i class="fab fa-youtube"style="font-size: 50px; color:black;"></i></a>
-              <a href="https://www.instagram.com/photoup94/" target="_blank"><i class="fab fa-instagram"style="font-size: 50px; color:black;"></i></a>
+              <a href="https://www.youtube.com/channel/UCiOalYiee_t57inMNtgSVtA" target="_blank" style="margin-right:1rem;" ><i class="fab fa-youtube"style="font-size: 35px; color:black;"></i></a>
+              <a href="https://www.instagram.com/photoup94/" target="_blank"><i class="fab fa-instagram"style="font-size: 35px; color:black;"></i></a>
             </div>
           </div>
           <div class="row">
@@ -75,7 +80,7 @@
           </div>
         </div>
       </section>
-    </footer>  
+    </footer>
     <!-- Optional JavaScript; choose one of the two! -->
     <script>
       (function () {
@@ -112,5 +117,30 @@
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <!--owl corousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+        })
+    </script>
+
   </body>
 </html>
