@@ -68,13 +68,13 @@
     </div>
 
     <div class="row bagian">
-      <div class="col-md-12 d-flex justify-content-center" data-aos="">
+      <div class="col-sm-12 d-flex justify-content-center" data-aos="">
         <p>Bagian dari</p>
       </div>
     </div>
 
     <div class="row p-0 m-10">
-      <div class="col-sm-4 d-flex justify-content-center">
+      <div class="col-md-4 d-flex justify-content-center">
         <img width="30%" height="100%" src="{{asset('assets/img/up.png')}}" alt="logo up">
       </div>
       <div class="col-sm-4 d-flex justify-content-center">

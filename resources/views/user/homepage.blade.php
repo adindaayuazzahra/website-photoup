@@ -6,14 +6,11 @@
   color: rgb(255, 255, 255);
   border-bottom-color: #F2BF3C;
 }
-  .btn {
-
-  }
 </style>
 @endsection
 @section('content')
 <div class="jumbotron d-flex justify-content-center align-items-center w-100 vh-100 ">
-  <div class="container flex-column">
+  <div class="container">
     <section class="">
       {{-- <svg width="100" height="100" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <circle cx="41" cy="41" r="40" fill="white" stroke="#232323" stroke-width="2"/>
@@ -22,7 +19,7 @@
         <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
           <use xlink:href="#image0" transform="translate(-0.000529661) scale(0.00105932)"/>
         </pattern> --}}
-        <image id="image0" width="130" height="130" style="margin-bottom:20px;" src="{{asset('assets/img/logo1.png')}}"/>
+        <image id="image0" width="100px" style="" src="{{asset('assets/img/logo1.png')}}"/>
       {{-- </svg> --}}
 
       <h1 class="display-1"> Selamat Datang di<br>UKM PHOTO UP KMUP </h1><br>
@@ -30,7 +27,7 @@
         Gedung Pusat Kegiatan Mahasiswa, Universitas Pancasila.
         <br>Jl. Srengseng Sawah , Jagakarsa, Jakarta Selatan 126640.</p>
 
-      <a href="#profil" class="btn btn-custom btn-lg text-white mulai">MULAI</a>
+      <a href="#profil" class="btn btn-custom btn-lg text-white mulai">Mulai</a>
     </section>
   </div>
 </div>
