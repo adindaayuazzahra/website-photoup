@@ -2,19 +2,6 @@
 @section('title','PHOTO UP | PORTOFOLIO')
 @section('css')
 <style>
-  .nav-masthead .nav-link {
-    padding: .25rem 0;
-    font-weight: 700;
-    color: rgba(255, 255, 255, .5);
-    border-bottom: .25rem solid transparent;
-  }
-  .nav-masthead .nav-link:hover,
-  .nav-masthead .nav-link:focus {
-    border-bottom-color: rgba(61, 61, 61, 0.25);
-  }
-  .nav-masthead .nav-link {
-    margin-left: 0.5rem;
-  }
   .nav-masthead .porto {
     color: rgb(255, 255, 255);
     border-bottom-color: #F2BF3C;
@@ -27,9 +14,9 @@
     z-index: 1;
   }
   .portofolio .judul {
-    font-family: 'Roboto Slab'; 
+    font-family: 'Roboto Slab';
     font-weight:800;
-    font-size:50px; 
+    font-size:50px;
   }
   .portofolio .row {
   display: -ms-flexbox; /* IE10 */
@@ -107,9 +94,9 @@
   }
   @media (max-width: 700px) {
     .portofolio .judul {
-      font-family: 'Roboto Slab'; 
+      font-family: 'Roboto Slab';
       font-weight:800;
-      font-size:40px; 
+      font-size:40px;
     }
   }
 </style>
@@ -122,7 +109,7 @@
         <h1 class="judul">Portofolio.</h1>
       </div>
     </div>
-    
+
     <div class="row">
       {{-- Kolom 1 --}}
       <div class="col-md-3 column">
@@ -133,7 +120,7 @@
           <img src="{{asset('assets/img/7.jpeg')}}" style="width:100%">
         </a>
       </div>
-      
+
       {{-- Kolom 2 --}}
       <div class="col-md-3 column ">
         <a class="lightbox" href="assets/img/4.jpeg">
@@ -145,8 +132,8 @@
         <a class="lightbox" href="assets/img/2.jpeg">
           <img src="{{asset('assets/img/2.jpeg')}}" style="width:100%">
         </a>
-      </div>  
-      
+      </div>
+
       {{-- Kolom 3 --}}
       <div class="col-md-3 column ">
         <a class="lightbox" href="assets/img/8.jpg">
@@ -168,7 +155,7 @@
       </div>
     </div>
 
-    
+
   </div>
 </section>
 

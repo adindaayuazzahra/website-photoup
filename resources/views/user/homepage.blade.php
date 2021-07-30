@@ -10,32 +10,24 @@
 @endsection
 @section('content')
 <div class="jumbotron d-flex justify-content-center align-items-center w-100 vh-100 ">
-  <div class="container flex-column">
+  <div class="container">
     <section class="">
-      <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      {{-- <svg width="100" height="100" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <circle cx="41" cy="41" r="40" fill="white" stroke="#232323" stroke-width="2"/>
         <rect x="14.4432" y="13.9773" width="53.5795" height="53.5795" fill="url(#pattern0)"/>
         <defs>
         <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
           <use xlink:href="#image0" transform="translate(-0.000529661) scale(0.00105932)"/>
-        </pattern>
-        <image id="image0" width="945" height="944" xlink:href="{{asset('assets/img/logo.jpg')}}"/>
-      </svg>
-      <h1 class="display-1 mt-1 mb-0">
-        {{-- <svg width="90" height="90" style="margin-left:-100px;">
-          <rect width="90" height="90" style="fill:#F2BF3C;" />
-        </svg> --}}
-        Selamat Datang di<br><span>UKM PHOTO UP KMUP</span>
-      </h1><br>
-      <p class="alamat">
+        </pattern> --}}
+        <image id="image0" width="100px" style="" src="{{asset('assets/img/logo1.png')}}"/>
+      {{-- </svg> --}}
+
+      <h1 class="display-1"> Selamat Datang di<br>UKM PHOTO UP KMUP </h1><br>
+      <p class="alamat" style="">
         Gedung Pusat Kegiatan Mahasiswa, Universitas Pancasila.
-        <br>Jl. Srengseng Sawah , Jagakarsa, Jakarta Selatan 126640.
-        {{-- <svg style="margin-right: -6rem;" width="90" height="90" style="margin-left:-100px;">
-          <rect width="90" height="90" style="fill:#F2BF3C;" />
-        </svg> --}}
-      </p>
-      
-      <a href="#profil" class="btn btn-custom btn-lg text-white mulai p-1">MULAI</a>
+        <br>Jl. Srengseng Sawah , Jagakarsa, Jakarta Selatan 126640.</p>
+
+      <a href="#profil" class="btn btn-custom btn-lg text-white mulai">Mulai</a>
     </section>
   </div>
 </div>
@@ -49,13 +41,14 @@
         <h1 class="judul" data-aos="fade-right" data-aos-anchor-placement="top">Photography<br>Universitas Pancasila</h1>
       </div>
     </div>
-    
+
     <div class="row gambar-content">
       <div class="col-md-6 col-sm-12 d-flex justify-content-end align-items-end" >
         <img  width="100%" height="100%" src="{{asset('assets/img/profil.png')}}"/>
       </div>
       <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
         <p class="mt-5 mb-2" data-aos="fade-left" data-aos-anchor-placement="bottom">UKM PHOTO UP KMUP didirikan pada tanggal 22 April 1994 oleh mahasiswa/i Universitas Pancasila dibawah naungan Senat KMUP.</p>
+
         <a href="{{'/profil'}}" class="btn btn-custom btn-lg text-white">Selengkapnya</a>
       </div>
     </div>
@@ -63,16 +56,15 @@
   </div>
 </section>
 
-{{-- kkegiatn --}}
+{{-- kegiatn --}}
 <section class="kegiatan">
   <div class="container">
-    
     <div class="row">
       <div class="col-md-12 d-flex justify-content-center">
         <h1 class="judul" data-aos="fade-left" data-aos-anchor-placement="top">Kegiatan</h1>
       </div>
     </div>
-    
+
     <div class="row gambar-content mb-5">
       <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
         <p class="my-5" data-aos="fade-right" data-aos-anchor-placement="bottom">UKM PHOTO UP KMUP mengadakan segenap kegiatan yang berkaitan dengan fotografi dan berorganisasi.</p>
@@ -81,7 +73,7 @@
         <img  width="100%" height="100%" src="{{asset('assets/img/kegiatan.png')}}"/>
       </div>
     </div>
-    
+
     {{-- kartuu kegiatan --}}
     <div class="row mb-5">
 
@@ -215,7 +207,7 @@
       </div>
 
     </div>
-    
+
   </div>
 </section>
 
@@ -226,7 +218,7 @@
         <img src="{{asset('assets/img/Rectangle porto.png')}}" alt="">
         <h1 class="judul-home">Portofolio</h1>
       </div>
-      
+
       {{-- Kolom 1 --}}
       <div class="col-md-3 column">
         <a class="lightbox" href="assets/img/1.jpeg">
@@ -236,7 +228,7 @@
           <img src="{{asset('assets/img/7.jpeg')}}" style="width:100%">
         </a>
       </div>
-      
+
       {{-- Kolom 2 --}}
       <div class="col-md-3 column ">
         <a class="lightbox" href="assets/img/4.jpeg">
@@ -248,8 +240,8 @@
         <a class="lightbox" href="assets/img/2.jpeg">
           <img src="{{asset('assets/img/2.jpeg')}}" style="width:100%">
         </a>
-      </div>  
-      
+      </div>
+
       {{-- Kolom 3 --}}
       <div class="col-md-3 column ">
         <a class="lightbox" href="assets/img/8.jpg">
@@ -260,7 +252,7 @@
         </a>
       </div>
     </div>
-      
+
     </div>
     <div class="row mt-5">
       <div class="col-md-12 d-flex justify-content-center">

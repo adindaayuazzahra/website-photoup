@@ -18,7 +18,7 @@
 
   <div class="row mt-5">
     <div class="col d-flex align-items-start justify-content-center">
-      <img width="100%" height="100%" src="{{asset('assets/img/coming soon.png')}}">
+      <img width="60%"  src="{{asset('assets/img/coming soon.png')}}">
     </div>
   </div>
 </section>
