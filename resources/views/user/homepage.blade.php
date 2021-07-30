@@ -48,7 +48,8 @@
       </div>
       <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
         <p class="mt-5 mb-2" data-aos="fade-left" data-aos-anchor-placement="bottom">UKM PHOTO UP KMUP didirikan pada tanggal 22 April 1994 oleh mahasiswa/i Universitas Pancasila dibawah naungan Senat KMUP.</p>
-        <a href="{{('/profil')}}" class="btn btn-lg btn-custom  text-white">Selengkapnya</a>
+
+        <a href="{{'/profil'}}" class="btn btn-custom btn-lg text-white">Selengkapnya</a>
       </div>
     </div>
 
