@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -11,17 +11,20 @@
     <link rel="stylesheet" href="{{asset('assets/node_modules/aos/dist/aos.css')}}"/>
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/baguetteBox.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- owl corousel-->
-    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/owl.theme.default.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     {{-- font --}}
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700" rel="stylesheet" />
+
+    {{-- lightbox --}}<!-- 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"/> -->
 
     {{-- css --}}
     @yield('css')
@@ -33,25 +36,25 @@
     <nav style="font-family: 'Roboto', sans-serif;" class="navbar fixed-top navbar-expand-lg navbar-light"  aria-label="Main navigation">
       <div class="container">
         <a class="navbar-brand" href="{{'/'}}">PHOTO UP</a>
-        <button class="navbar-toggler border-0" type="button" aria-expanded="false" id="navbarSideCollapse" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" aria-expanded="false" id="navbarSideCollapse" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div style="font-style: normal; font-size: 18px;" class="nav-masthead  navbar-collapse  offcanvas-collapse  justify-content-end" id="navbars">
+        </button> 
+        <div style="font-style: normal; font-size: 18px;" class="nav-masthead  navbar-collapse offcanvas-collapse text-center justify-content-end" id="navbars">
           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active home" href="{{'/'}}">Beranda</a>
+              <a class="nav-link active home" href="{{'/'}}">&nbsp;&nbsp;Beranda&nbsp;&nbsp;</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active profil" href="{{'/profil'}}">Profil</a>
+              <a class="nav-link active profil" href="{{'/profil'}}">&nbsp;&nbsp;&nbsp;&nbsp;Profil&nbsp;&nbsp;&nbsp;&nbsp;</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active porto" href="{{'/portofolio'}}">Portofolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active artikel" href="{{'/artikel'}}">Artikel</a>
+              <a class="nav-link active artikel" href="{{'/artikel'}}">&nbsp;&nbsp;&nbsp;Artikel&nbsp;&nbsp;&nbsp;</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active acara" href="{{'/acara'}}">Acara</a>
+              <a class="nav-link active acara" href="{{'/acara'}}">&nbsp;&nbsp;&nbsp;&nbsp;Acara&nbsp;&nbsp;&nbsp;&nbsp;</a>
             </li>
           </ul>
         </div>
@@ -59,13 +62,14 @@
     </nav>
 
     @yield('content')
+    
 
     <footer class="text-center text-lg-start p-1 mt-5 foooter"style="background-color : #f8f5f2;">
       <section class="content-footer">
         <div class="container text-center text-md-start mt-5">
           <div class="row">
             <div class="col-md-6 col-sm-12 mx-auto mb-4" style="font-family:'Roboto';">
-              <p class="text-uppercase fw-bold mb-2" style="font-weight:400; font-size:20pt;">UKM PHOTOUP KMUP</p>
+              <p class="text-uppercase fw-bold mb-2" style="font-weight:400; font-size:20pt;">UKM PHOTO UP KMUP</p>
               <p style="font-weight:300;">Gedung Pusat Kegiatan Mahasiswa, Universitas Pancasila.<br>Jl.Srengseng Sawah, Jagakarsa Jakarta Selatan 12640</p>
             </div>
             <div class="col-md-5 col-sm-12 mx-auto d-md-flex justify-content-end align-content-center align-items-center mb-md-0 mb-4">
@@ -119,15 +123,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
     <!--owl corousel-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
+        animateOut: 'slideOutDown',
         loop:true,
-        margin:10,
+        margin:0,
         nav:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
         responsive:{
             0:{
                 items:1
@@ -136,11 +142,21 @@
                 items:3
             },
             1000:{
-                items:5
+                items:4
             }
         }
         })
+        
     </script>
+
+<!-- wow -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+                new WOW().init();
+  </script>
+
+<!-- lightbox --> <!-- 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>  -->
 
   </body>
 </html>

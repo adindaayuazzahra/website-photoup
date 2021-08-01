@@ -3,8 +3,12 @@
 @section('css')
 <style>
   .nav-masthead .acara {
-    color: rgb(255, 255, 255);
-    border-bottom-color: #F2BF3C;
+    border-color: #000000;
+    border-radius: 100px;
+  }
+  .nav-masthead .acara:hover {
+    border-color: #000000;
+    border-radius: 100px;
   }
 </style>
 @endsection
@@ -22,4 +26,8 @@
     </div>
   </div>
 </section>
+
+<a href="#" class="scroll-top">
+        <i class="ini fas fa-chevron-up"></i>
+</a>
 @endsection

@@ -3,8 +3,12 @@
 @section('css')
 <style>
   .nav-masthead .artikel {
-    color: rgb(255, 255, 255);
-    border-bottom-color: #F2BF3C;
+    border-color: #000000;
+    border-radius: 100px;
+  }
+  .nav-masthead .artikel:hover {
+    border-color: #000000;
+    border-radius: 100px;
   }
   .viewartikel .judul{
     margin-top: 7rem;
@@ -129,4 +133,7 @@
   </div>
 </div> --}}
 
+<a href="#" class="scroll-top">
+        <i class="ini fas fa-chevron-up"></i>
+</a>
 @endsection

@@ -3,8 +3,12 @@
 @section('css')
 <style>
   .nav-masthead .profil {
-    color: rgb(255, 255, 255);
-    border-bottom-color: #F2BF3C;
+    border-color: #000000;
+    border-radius: 100px;
+  }
+  .nav-masthead .profil:hover {
+    border-color: #000000;
+    border-radius: 100px;
   }
   .profil .bagian p {
     font-family: 'Roboto Slab';
@@ -18,7 +22,7 @@
    background-color: #f8f5f2
   }
   .kontak-sekre {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
   .kontak-sekre .judul-home{
     font-family: 'Roboto Slab';
@@ -49,47 +53,74 @@
 </style>
 @endsection
 @section('content')
-<section  class="profil" >
+<section  class="profil">
   <div  class="container" >
     <div class="row">
       <div class="col-md-12 d-flex justify-content-center">
-        <h1 class="judul" data-aos="fade-right">Photography<br>Universitas Pancasila</h1>
+        <h1 class="judul" data-aos="fade-right" data-eos-delay="100">Photography<br>Universitas Pancasila</h1>
       </div>
     </div>
 
     <div class="row gambar-content">
       <div class="col-md-6 col-sm-12 d-flex justify-content-end align-items-end" >
-        <img  width="100%" height="100%" src="{{asset('assets/img/profil.png')}}"/>
+        <img  width="100%" height="100%" src="{{asset('assets/img/profil.png')}}" data-aos="fade-right"/>
       </div>
       <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
         <p class="mt-5 mb-2" data-aos="fade-left">UKM PHOTO UP KMUP didirikan pada tanggal 22 April 1994 oleh mahasiswa/i Universitas Pancasila dibawah naungan Senat KMUP.</p>
-        <a href="" class="btn btn-lg  text-white">Selengkapnya</a>
       </div>
     </div>
-
-    <div class="row bagian">
-      <div class="col-sm-12 d-flex justify-content-center" data-aos="">
-        <p>Bagian dari</p>
-      </div>
-    </div>
-
-    <div class="row p-0 m-10">
-      <div class="col-md-4 d-flex justify-content-center">
-        <img width="30%" height="100%" src="{{asset('assets/img/up.png')}}" alt="logo up">
-      </div>
-      <div class="col-sm-4 d-flex justify-content-center">
-        <img width="30%" height="100%" src="{{asset('assets/img/senat.png')}}" alt="logo senat KMUP">
-      </div>
-      <div class="col-sm-4 d-flex justify-content-center">
-        <img width="70%" height="100%" src="{{asset('assets/img/panorama.png')}}" alt="logo panorama">
+<!-- video profil -->
+<section class="intro-video-area section" data-aos="fade-down">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="inner-content-head">
+          <div class="inner-content">
+            <div class="section-title">
+            <span class="wow zoomIn" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">UKM PHOTO UP KMUP</span>
+            <h2 class="wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Watch Our intro video</h2>
+            <p class="wow" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+            </div>
+              <div class="intro-video-play">
+                <div class="play-thumb wow zoomIn" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">
+                <a href="https://www.youtube.com/watch?v=cTnJlw108ks&t=247s" data-lightbox ><i class="ini fas fa-play"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Modal -->
+
+<!-- akhir video profil -->
+
+<!-- bagian dari -->
+    <div class="row bagian">
+      <div class="col-sm-12 d-flex justify-content-center" data-aos="fade-in">
+        <p>Bagian dari</p>
+      </div>
+    </div>
+
+    <div class="row p-0 m-5 justify-content-center">
+      <div class="col-sm-1 col-md-3 d-flex justify-content-center" data-aos="fade-up" data-eos-delay="100">
+        <img src="{{asset('assets/img/up.svg')}}" alt="logo UP" >
+      </div>
+      <div class="col-sm-1 col-md-3 d-flex justify-content-center" data-aos="fade-up" data-eos-delay="100">
+        <img src="{{asset('assets/img/senat.svg')}}" alt="logo senat KMUP">
+      </div>
+      <div class="col-sm-1 col-md-3 d-flex justify-content-center" data-aos="fade-up" data-eos-delay="100">
+        <img src="{{asset('assets/img/panorama.svg')}}" alt="logo panorama">
+      </div>
+    </div>
+  </div>
+</section>
+
+{{-- kegiatan --}}
 <section class="kegiatan">
   <div class="container">
-
     <div class="row">
       <div class="col-md-12 d-flex justify-content-center">
         <h1 class="judul" data-aos="fade-left" data-aos-anchor-placement="top">Kegiatan</h1>
@@ -100,7 +131,7 @@
       <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
         <p class="my-5" data-aos="fade-right" data-aos-anchor-placement="bottom">UKM PHOTO UP KMUP mengadakan segenap kegiatan yang berkaitan dengan fotografi dan berorganisasi.</p>
       </div>
-      <div class="col-md-6 col-sm-12 d-flex justify-content-start align-items-start" >
+      <div class="col-md-6 col-sm-12 d-flex justify-content-start align-items-start" data-aos="fade-left" >
         <img  width="100%" height="100%" src="{{asset('assets/img/kegiatan.png')}}"/>
       </div>
     </div>
@@ -110,7 +141,7 @@
 
       {{-- diklat --}}
       <div class="col-md-4 d-flex justify-content-center">
-        <a class="gambar" data-bs-toggle="modal" data-bs-target="#diklat">
+        <a class="gambar" data-bs-toggle="modal" data-bs-target="#diklat" data-aos="fade-up" data-aos-delay="100">
           <img width="100%" height="100%" src="{{asset('assets/img/diklat.png')}}" alt="">
         </a>
         <!-- Modal -->
@@ -153,7 +184,7 @@
 
       {{-- Pameran foto --}}
       <div class="col-md-4 d-flex justify-content-center">
-        <a class="gambar" data-bs-toggle="modal" data-bs-target="#pameran">
+        <a class="gambar" data-bs-toggle="modal" data-bs-target="#pameran" data-aos="fade-up" data-aos-delay="200">
           <img width="100%" height="100%" src="{{asset('assets/img/pameran.png')}}" alt="">
         </a>
         <!-- Modal -->
@@ -196,7 +227,7 @@
 
       {{-- Hunting Foto --}}
       <div class="col-md-4 d-flex justify-content-center">
-        <a class="gambar" data-bs-toggle="modal" data-bs-target="#hunting">
+        <a class="gambar" data-bs-toggle="modal" data-bs-target="#hunting" data-aos="fade-up" data-aos-delay="300">
           <img width="100%" height="100%" src="{{asset('assets/img/hunting.png')}}" alt="">
         </a>
         <!-- Modal -->
@@ -228,29 +259,41 @@
                       </div>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
+
     </div>
+
   </div>
 </section>
 
 {{-- ini kumpulan foto --}}
 <div class="container">
-    <div class="owl-carousel owl-theme">
-    <div class="item"><img src="{{asset('assets/img/k3_3.JPG')}}" class="d-block w-100" alt="..."></div>
-    <div class="item"><img src="{{asset('assets/img/k3_3.JPG')}}" class="d-block w-100" alt="..."></div>
-    <div class="item"><img src="{{asset('assets/img/k3_3.JPG')}}" class="d-block w-100" alt="..."></div>
+    <div class="owl-carousel owl-theme" style="margin-top: 100px;" data-aos="fade-left">
+    <div class="item"><img src="{{asset('assets/img/f1.JPG')}}" class="d-block w-100" alt="..."></div>
+    <div class="item"><img src="{{asset('assets/img/f2.JPG')}}" class="d-block w-100" alt="..."></div>
+    <div class="item"><img src="{{asset('assets/img/f3.JPG')}}" class="d-block w-100" alt="..."></div>
+    <div class="item"><img src="{{asset('assets/img/f4.JPG')}}" class="d-block w-100" alt="..."></div>
+    </div>
+</div>
+<div class="container">
+    <div class="owl-carousel owl-theme" data-aos="fade-right">
+    <div class="item"><img src="{{asset('assets/img/f5.JPG')}}" class="d-block w-100" alt="..."></div>
+    <div class="item"><img src="{{asset('assets/img/f6.JPG')}}" class="d-block w-100" alt="..."></div>
+    <div class="item"><img src="{{asset('assets/img/f7.JPG')}}" class="d-block w-100" alt="..."></div>
     <div class="item"><img src="{{asset('assets/img/k3_3.JPG')}}" class="d-block w-100" alt="..."></div>
     </div>
 </div>
 
   {{-- kontak kami & sekretariat --}}
 <div class="container">
-  <div class="row kontak-sekre">
+  <div class="row kontak-sekre" data-aos="fade-up">
     <div class="col-md-6 d-flex flex-column align-items-start mt-5">
       <img src="{{asset('assets/img/Rectangle porto.png')}}" alt="">
       <h1 class="judul-home">Kontak Kami</h1>
@@ -289,7 +332,7 @@
 
 
 
-    <div class="col-md-6 d-flex flex-column align-items-start mt-5">
+    <div class="col-md-6 d-flex flex-column align-items-start mt-5" data-aos="fade-up">
       <img src="{{asset('assets/img/Rectangle porto.png')}}" alt="">
       <h1 class="judul-home">Sekretariat</h1>
       <div class="container mt-5">
@@ -301,5 +344,7 @@
   </div>
 </div>
 
-
+<a href="#" class="scroll-top">
+        <i class="ini fas fa-chevron-up"></i>
+</a>
 @endsection
